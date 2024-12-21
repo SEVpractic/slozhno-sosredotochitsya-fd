@@ -6,18 +6,66 @@
 
   font-family: var(--font-family, monospace);
   font-size: var(--font-size, 18px);
-  font-weight: 400;
+  font-weight: 400; /* ToDo в переменную! */
   color: var(--text-color, #F1B2CE);
 }
 
 .header {
   display: grid;
   grid-template-columns: 1fr;
-  block-size: 100vh;
+  min-block-size: 100vh;
   padding: 10px;
-  font-weight: 700;
+  padding-block-start: 73px;
+  padding-block-end: 66px;
+  font-weight: 700; /* ToDo в переменную! */
   justify-items: end;
+  align-items: start;
+  position: relative;
+}
+
+.rec {
+  position: absolute;
+  inset-block-start: 10px;
+  inset-inline-end: 19px;
+  color: var(--theme-menu-color, #FF0070);
+  text-transform: uppercase;  
+  font-weight: 400;
+  display: flex;
+  gap: 11px;
   align-items: center;
+}
+
+.rec::after {
+  content: "";
+  inline-size: 9px;
+  block-size: 9px;
+  border-radius: 50%;
+  background-color: var(--theme-menu-color, #FF0070);
+	box-shadow: 0 0 4px 6px var(--theme-menu-hover-color, #FF007040);
+}
+
+.decorated-zone::before,
+.decorated-zone::after {
+  content: "";
+  display: block;
+  position: absolute;
+  block-size: 25px;
+  inline-size: 25px;
+  border: 1px solid transparent;
+}
+
+.decorated-zone::before {  
+  inset-block-start: 10px;
+  inset-inline-end: 10px;
+  border-inline-end-color: var(--theme-menu-color, #FF0070);
+  border-block-start-color: var(--theme-menu-color, #FF0070);
+}
+
+.decorated-zone::after {  
+  inset-block-end: 10px;
+  inset-inline-start: 10px;
+  border-inline-start-color: var(--theme-menu-color, #FF0070);
+  border-block-end-color: var(--theme-menu-color, #FF0070);
 }
 
 .header__theme-menu {
@@ -39,6 +87,7 @@
   color: var(--theme-menu-color, #FF0070);
   text-transform: lowercase;
   outline: none;
+	transition: 0.2s border-color ease-in;
 }
 
 .header__theme-menu-button:hover {
@@ -62,12 +111,17 @@
   font-size: clamp(7.25rem, 7.1055rem + 0.6163vw, 7.5rem);
   line-height: 95.7px;
   justify-self: start;
+  align-self: center;
+  padding-block-start: 17px;
 }
 
-.header__description {
+.header__description {	
+	align-self: end;
 }
 
 .title-decor {
   color: var(--decored-text-color, #000028);
   background-color: var(--decored-bg-color, #FF0070);
+  font-weight: 700; /* ToDo в переменную! */
+  line-height: 23.4px;
 }
