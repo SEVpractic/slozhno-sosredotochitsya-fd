@@ -2,3 +2,13 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+:root {
+  --midnight-blue: #000028;
+  --soft-pink: #F1B2CE;
+  --hot-pink: #FF0070;
+  --hot-pink-40: #FF007040;
+  --electric-purple: #DB00FF;
+
+  --font-family: 'IBM Plex mono', monospace;
+  --font-size: 18px
+}

@@ -9,6 +9,15 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --bg-color: var(--midnight-blue);
+  --bg-image: url('../images/cover-image-dark.png');
+  --theme-menu-color: var(--hot-pink);
+  --theme-menu-hover-color: var(--hot-pink-40);
+  --text-color: var(--soft-pink);
+  --title-color: var(--electric-purple);
+  --title-shadow: var(--hot-pink);
+  --decored-text-color: var(--midnight-blue);
+  --decored-bg-color: var(--hot-pink);
 }
 
 .theme-dark .page {
