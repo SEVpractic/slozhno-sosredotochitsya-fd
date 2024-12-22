@@ -5,17 +5,17 @@
   background-color: var(--bg-color, #000028);
   font-family: var(--font-family, monospace);
   font-size: var(--font-size, 18px);
+  line-height: 23.4px; /* ToDo в переменную! */
   font-weight: 400; /* ToDo в переменную! */
   color: var(--text-color, #F1B2CE);
 }
 
 .header {
   display: grid;
-  grid-template-columns: 1fr;
   grid-template-rows: 1fr min-content 1fr;
   min-block-size: 100vh;
   padding: 10px;
-  /* margin-block-end: 40px; */
+  margin-block-end: 40px;
   font-weight: 700; /* ToDo в переменную! */
   justify-items: end;
   align-items: center;
@@ -28,7 +28,7 @@
   inset-inline-end: 19px;
   color: var(--theme-menu-color, #FF0070);
   text-transform: uppercase;  
-  font-weight: 400;
+  font-weight: 400; /* ToDo в переменную! */
   display: flex;
   gap: 11px;
   align-items: center;
@@ -105,11 +105,14 @@
 }
 
 .header__title {
+  justify-self: start;
+}
+
+.main__title {
   color: var(--title-color, #DB00FF);
   text-shadow: 4px 4px 0 var(--title-shadow, #FF0070);
   font-size: clamp(7.25rem, 7.1055rem + 0.6163vw, 7.5rem);
   line-height: 95.7px;
-  justify-self: start;
 }
 
 .header__description {
@@ -118,6 +121,94 @@
 .title-decor {
   color: var(--decored-text-color, #000028);
   background-color: var(--decored-bg-color, #FF0070);
-  font-weight: 700; /* ToDo в переменную! */
   line-height: 23.4px;
+}
+
+.title-decor_light {
+  font-weight: 400;
+}
+
+.main {
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-block-end: 40px;
+}
+
+.section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.section__title {
+  color: var(--section-title-cxolor, #FF0070);
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.article__title {
+
+}
+
+.article__content {
+}
+
+.pictures {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+} 
+
+.pictures-content {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-column: 1fr;
+  gap: 10px;
+}
+
+.pictures-content__item {
+	object-fit: cover;
+	object-position: center;
+  inline-size: 100%;
+  block-size: 100%;
+} 
+
+/* .sunset__picture {
+	grid-column: 1 / 3;
+	grid-row: 1 / 2;
+}
+
+.ice-cream__picture {
+	grid-column: 3 / 4;
+	grid-row: 1 / 3;
+}
+
+.tape__picture {
+	grid-column: 1 / 2;
+	grid-row: 2 / 4;
+}
+
+.books__picture {
+	grid-column: 2 / 3;
+	grid-row: 2 / 3;
+}
+
+.street__picture {
+	grid-column: 2 / 4;
+	grid-row: 3 / 4;
+} */
+
+.footer {
+  display: grid;
+  min-block-size: 100vh;
+  padding: 10px;
+  justify-items: center;
+  align-items: center;
+  position: relative;
 }

@@ -18,6 +18,7 @@
   --title-shadow: var(--hot-pink);
   --decored-text-color: var(--midnight-blue);
   --decored-bg-color: var(--hot-pink);
+  --section-title-cxolor: var(--hot-pink);
 }
 
 .theme-dark .page {
