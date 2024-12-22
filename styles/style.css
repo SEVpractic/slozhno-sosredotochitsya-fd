@@ -159,6 +159,22 @@
 .article__content {
 }
 
+.link {
+  text-shadow: 2px 1px 0 var(--title-shadow, #FF0070);
+  text-decoration: none;
+  outline: none;
+  border: 1px solid transparent;
+	transition: 0.2s border-color ease-in;
+}
+
+.link:hover {
+  border-block-end-color: inherit;
+}
+
+.link:focus-visible {
+  border-color: inherit;
+}
+
 .pictures {
   display: flex;
   flex-direction: column;
