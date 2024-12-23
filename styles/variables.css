@@ -10,5 +10,7 @@
   --electric-purple: #DB00FF;
 
   --font-family: 'IBM Plex mono', monospace;
-  --font-size: 18px
+  --font-size: 18px;
+
+  --bg-image: var(--bg-dark-image);
 }

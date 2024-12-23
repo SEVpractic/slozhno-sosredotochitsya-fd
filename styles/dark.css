@@ -10,7 +10,7 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --bg-color: var(--midnight-blue);
-  --bg-image: url('../images/cover-image-dark.png');
+  --bg-dark-image: url('../images/cover-image-dark.png');
   --theme-menu-color: var(--hot-pink);
   --theme-menu-hover-color: var(--hot-pink-40);
   --text-color: var(--soft-pink);
