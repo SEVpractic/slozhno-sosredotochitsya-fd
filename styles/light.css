@@ -9,6 +9,35 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --bg-color: var(--blush-white);
+  --bg-image: var(--bg-lght-image);
+  --theme-menu-color: var(--charcoal-black);
+  --theme-menu-hover-color: var(--vivid-pink-40);
+  --text-color: var(--charcoal-black);
+  --title-color: var(--pastel-rose);
+  --title-shadow: var(--vivid-pink);
+  --decored-text-color: var(--charcoal-black);
+  --decored-bg-color: var(--vivid-pink);
+  --section-title-cxolor: var(--charcoal-black);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-color: var(--blush-white);
+    --bg-image: var(--bg-lght-image);
+    --theme-menu-color: var(--charcoal-black);
+    --theme-menu-hover-color: var(--vivid-pink-40);
+    --text-color: var(--charcoal-black);
+    --title-color: var(--pastel-rose);
+    --title-shadow: var(--vivid-pink);
+    --decored-text-color: var(--charcoal-black);
+    --decored-bg-color: var(--vivid-pink);
+    --section-title-cxolor: var(--charcoal-black); 
+  }
+
+  .rec {
+    display: none;
+  }
 }
 
 .theme-light .page {

@@ -1,8 +1,19 @@
 /*
   Переменные для вашего проекта
   и их переопределение под различные устройства
+  #FFF1F7
+  #353430
+  #FF8DCB
+  #FF8DCB40
+  #FFC2E6
 */
 :root {
+  --blush-white: #FFF1F7;
+  --charcoal-black: #353430;
+  --vivid-pink: #FF8DCB;
+  --vivid-pink-40: #FF8DCB40;
+  --pastel-rose: #FFC2E6;
+
   --midnight-blue: #000028;
   --soft-pink: #F1B2CE;
   --hot-pink: #FF0070;
@@ -11,6 +22,7 @@
 
   --font-family: 'IBM Plex mono', monospace;
   --font-size: 18px;
-
-  --bg-image: var(--bg-dark-image);
+  
+  --bg-dark-image: url('../images/cover-image-dark.png');
+  --bg-lght-image: url('../images/cover-image-light.png');
 }

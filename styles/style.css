@@ -28,6 +28,16 @@
   padding-block: 10px;
 }
 
+.theme-light
+.rec {
+  display: none;
+}
+
+.theme-dark
+.rec {
+  display: flex;
+}
+
 .rec {
   position: absolute;
   inset-block-start: 10px;
