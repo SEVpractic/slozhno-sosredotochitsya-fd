@@ -12,7 +12,7 @@
   --bg-color: var(--blush-white);
   --bg-image: var(--bg-lght-image);
   --theme-menu-color: var(--charcoal-black);
-  --theme-menu-hover-color: var(--vivid-pink-40);
+  --theme-menu-hover-color: var(--transparent-gray-40);
   --text-color: var(--charcoal-black);
   --title-color: var(--pastel-rose);
   --title-shadow: var(--vivid-pink);
@@ -26,7 +26,7 @@
     --bg-color: var(--blush-white);
     --bg-image: var(--bg-lght-image);
     --theme-menu-color: var(--charcoal-black);
-    --theme-menu-hover-color: var(--vivid-pink-40);
+    --theme-menu-hover-color: var(--transparent-gray-40);
     --text-color: var(--charcoal-black);
     --title-color: var(--pastel-rose);
     --title-shadow: var(--vivid-pink);
@@ -38,8 +38,4 @@
   .rec {
     display: none;
   }
-}
-
-.theme-light .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
 }
