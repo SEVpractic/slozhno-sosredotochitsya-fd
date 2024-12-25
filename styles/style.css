@@ -3,7 +3,7 @@
 .page {
   color: var(--text-color, #f1b2ce);
   font-family: var(--font-family, monospace);
-  font-weight: 400; 
+  font-weight: 400;
   font-size: var(--font-size, 18px);
   line-height: 23.4px; 
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
@@ -24,7 +24,7 @@
   margin-block-end: 40px;
   padding-inline: 10px;
   padding-block: 10px;
-  font-weight: 700; 
+  font-weight: 700;
   min-block-size: 100vh;
 }
 
@@ -42,7 +42,7 @@
   align-items: center;
   gap: 11px;
   color: var(--theme-menu-color, #ff0070);
-  font-weight: 400; 
+  font-weight: 400;
   text-transform: uppercase;
   inset-block-start: 10px;
   inset-inline-end: 19px;
